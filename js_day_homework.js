@@ -100,7 +100,24 @@ var vegetablesArr = ["Bacon", "Tomato", "Lettuce", "Onion", "Cheese"];
 whileLoop(vegetablesArr);
 
 // 6.3 Loop again using a "for" with a counter
+
+function forLoopWithCounter(arr){
+  for (var i = 0; i < arr.length; i++ ){
+    console.log(arr[i]);
+  }
+}
+
+forLoopWithCounter(vegetablesArr);
+
 // 6.4 Loop again using a "for of"
+
+function forLoop(arr){
+  for (var vege of arr){
+    console.log(vege);
+  }
+}
+
+forLoop(vegetablesArr);
 
 
 // Section 7
