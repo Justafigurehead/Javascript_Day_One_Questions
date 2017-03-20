@@ -198,9 +198,62 @@ console.log(max);
   console.log(findAvgBankAccountvalue());
 
 // 7.5 Find the value of marcs bank account
+  function findMarcValue(){
+  for (var account of accounts){
+    if (account.name === 'marc'){
+      return account.amount;
+    }
+  }
+}
+
+console.log(findMarcValue());
+
 // 7.6 Find the holder of the largest bank account
+
+
+function findlargestAccHolder(){
+    var arr = [];
+    for (var account of accounts){
+        arr.push(account.amount);
+    }
+
+  var max = Math.max.apply(null, arr);
+  for (var account of accounts){
+    if (account.amount === max){
+      return account.name;
+    }
+  }
+}
+
+console.log(findlargestAccHolder());
+
+
 // 7.7 Calculate the total cash in business accounts
+
+function findTotalBusinessCash(){
+  var total = 0;
+  for (var account of accounts){
+    if (account.type === 'business'){
+      total += account.amount;
+    }
+  }
+  return total;
+}
+
+console.log(findTotalBusinessCash());
+
 // 7.8 Find the largest personal account owner
+  
+  function findLargestPersonalAccValue(){
+    var arr = []
+    for (var account of accounts){
+      if (account.type === 'personal'){
+        arr.push(account.amount);
+      }
+    }
+    
+  }
+
 
 
 // Section 8
