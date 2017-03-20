@@ -184,6 +184,19 @@ console.log(max);
  console.log(findName(accounts));
 
 // 7.4 Calculate the average bank account value
+
+  function findAvgBankAccountvalue(){
+     var total = 0;
+    for (var account of accounts){
+      total += account.amount;
+
+    }
+     var avg = total / accounts.length;
+     return avg;
+  }
+
+  console.log(findAvgBankAccountvalue());
+
 // 7.5 Find the value of marcs bank account
 // 7.6 Find the holder of the largest bank account
 // 7.7 Calculate the total cash in business accounts
