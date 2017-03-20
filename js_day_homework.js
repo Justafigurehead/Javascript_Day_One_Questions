@@ -31,26 +31,53 @@
 // Using examples that are different from above...
 
 // 3.1 Assign a variable that is a number  // var number = 1;
-// 3.2 Assign a variable that is a string // var aString = 
-// 3.3 Assign a variable that is a boolean
-// 3.4 Assign a variable that is an object
+// 3.2 Assign a variable that is a string // var aString = "cat";
+// 3.3 Assign a variable that is a boolean // var truey = true;
+// 3.4 Assign a variable that is an object // var obj = {};
 
 
 // Section 4
 
 // 4.1 Write a statement that writes "hello" to the console if it's true and "bye" if it is false
 
+  function maybeHello(boo){
+    if (boo === true){
+      console.log("hello");
+    }
+    else {
+      console.log("bye");
+    }
+  }
+
+  maybeHello("true");
+  maybeHello(true);
 
 // Section 5
 
 var animals = ["raccoon","hedgehog","mouse","gerbil"];
 
 // 5.1. Assign the first element to a variable
+ var firstAnimal = animals.shift();
+
+
 // 5.2. Assign the last element to a variable
+var lastAnimal = animals.pop();
+
+
 // 5.3. Assign the length of an array to a variable
+  var lengtharr = animals.length;
+
+
 // 5.4. Add an item to the end of the array
+  animals.push("cat");
+
 // 5.5. Add an item to the start of the array
+animals.unshift("dog");
+console.log(animals);
+
 // 5.6. Assign the index of hedgehog to a variable
+  var indexforHedge = animals.indexOf("hedgehog");
+  console.log(indexforHedge);
 
 
 // Section 6
