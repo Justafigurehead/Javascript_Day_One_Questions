@@ -147,8 +147,42 @@ var accounts = [
 
 // Write functions for the following tasks!
 // 7.1 Calculate the total cash in accounts
+
+  var total = 0;
+  for (var account of accounts){
+      total += account.amount;
+    }
+  console.log(total);
+
 // 7.2 Find the amount of money in the account with the largest balance
+  var arr = [];
+  for (var account of accounts){
+      arr.push(account.amount);
+  }
+
+var max = Math.max.apply(null, arr);
+console.log(max);
+
 // 7.3 Find the name of the account with the smallest balance
+
+  var arr = [];
+
+  function findName(accounts){
+  for (var account of accounts){
+      arr.push(account.amount);
+  }
+    var min = Math.min.apply(null, arr);
+    console.log(min);
+
+  for (var account of accounts){
+    if (account.amount === min){
+      return account.name;
+    }
+  }
+}
+
+ console.log(findName(accounts));
+
 // 7.4 Calculate the average bank account value
 // 7.5 Find the value of marcs bank account
 // 7.6 Find the holder of the largest bank account
