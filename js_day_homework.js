@@ -82,8 +82,23 @@ console.log(animals);
 
 // Section 6
 
-// 6.1 Create an array of 5 vegetables
+// 6.1 Create an array of 5 that should be vegetables
+
+var vegetablesArr = ["Bacon", "Tomato", "Lettuce", "Onion", "Cheese"];
+
 // 6.2 Loop over the array and write to the console using a "while"
+  
+
+  function whileLoop(arr){
+    var i = 0;
+  while ( i < arr.length){
+    console.log(i);
+    i++
+  }
+}
+
+whileLoop(vegetablesArr);
+
 // 6.3 Loop again using a "for" with a counter
 // 6.4 Loop again using a "for of"
 
